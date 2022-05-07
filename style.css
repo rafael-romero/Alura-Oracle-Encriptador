@@ -1,3 +1,39 @@
+body{
+  width: 940px;
+  height: auto;
+  margin: 0 auto;
+}
+
+#contenedor-principal{
+  margin-top: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+}
+
+#captura-de-datos{
+  width: 250px;
+  height: 300px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  display: block;
+    
+}
+
+#resultado{
+  width: 250px;
+  height: 300px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  background: #fefefe;
+  display: inline;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .ocultar{
   display: none; 
 }
