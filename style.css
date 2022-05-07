@@ -1,3 +1,14 @@
 .ocultar{
   display: none; 
 }
+
+footer{
+  margin-top: 50px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+footer > label{
+  margin-right: 30px;
+} 
