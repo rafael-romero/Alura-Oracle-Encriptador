@@ -73,7 +73,11 @@ p{
 }
 
 .error{
+  margin-top: 5px;
   border: 2px solid red;
+  border-radius: 5px;
+  color: yellow;
+  font-size: large;
 }
 
 #resultado{
