@@ -35,11 +35,10 @@ textarea{
   resize: inherit;  
 }
 
-::placeholder{ color: yellow; text-align:center;}
+::placeholder{ color: yellow; text-align:center; font-size: larger;}
 
 p{
   color: yellow;
-  
 }
 
 #aclaracion-texto-input{
@@ -93,6 +92,10 @@ p{
   align-items: center;
   text-align: center;
   background-image: url(img/fondo-encriptador.PNG);
+}
+
+#no-se-encontro-texto{
+  font-size: large;
 }
 
 .ocultar{
