@@ -1,16 +1,3 @@
-function copiarMensaje(){
-  const $resultadoMensaje =  document.querySelector("#resultado-mensaje");
-  const $mensajeUsuario = document.querySelector("#mensaje-usuario");
-  $mensajeUsuario.value = $resultadoMensaje.value;
-  $mensajeUsuario.focus();
-}
-
-const $btnCopiarMensaje = document.querySelector("#btn-copiar-mensaje");
-$btnCopiarMensaje.addEventListener("click", function(event){
-  event.preventDefault();
-  copiarMensaje();
-});
-
 function desencriptarMensaje(mensaje){
   let mensajeDesencriptado =  mensaje.replaceAll("ufat", "u")
   mensajeDesencriptado =  mensajeDesencriptado.replaceAll("ober", "o")
@@ -44,7 +31,6 @@ function encriptarMensaje(mensajeDelUsuario){
   mensajeEncriptado =  mensajeEncriptado.replaceAll("u", "ufat");
   return mensajeEncriptado;
 }
-
 
 const $btnEncriptar = document.querySelector("#btn-encriptar");
 $btnEncriptar.addEventListener("click", function(event){
