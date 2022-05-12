@@ -1,6 +1,7 @@
 function copiarMensaje(){
   const $resultadoMensaje =  document.querySelector("#resultado-mensaje");
-  document.querySelector("#mensaje-usuario").value = $resultadoMensaje.value;
+  const $mensajeUsuario = document.querySelector("#mensaje-usuario");
+  $mensajeUsuario.value = $resultadoMensaje.value;
   $mensajeUsuario.focus();
 }
 
@@ -22,6 +23,7 @@ function desencriptarMensaje(mensaje){
 const $btnDesencriptar = document.querySelector("#btn-desencriptar");
 $btnDesencriptar.addEventListener("click", function(event){
   event.preventDefault();
+  const $mensajeUsuario = document.querySelector("#mensaje-usuario");
   const errores= validarTexto($mensajeUsuario.value);
   if(errores.length > 0){
     mostrarErrores(errores);  
@@ -43,10 +45,11 @@ function encriptarMensaje(mensajeDelUsuario){
   return mensajeEncriptado;
 }
 
-const $mensajeUsuario = document.querySelector("#mensaje-usuario");
+
 const $btnEncriptar = document.querySelector("#btn-encriptar");
 $btnEncriptar.addEventListener("click", function(event){
   event.preventDefault();
+  const $mensajeUsuario = document.querySelector("#mensaje-usuario");
   const errores= validarTexto($mensajeUsuario.value);
   if(errores.length > 0){
     mostrarErrores(errores);  
