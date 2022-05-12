@@ -1,44 +1,52 @@
+function ocultarElemento(elemento){
+  elemento.classList.add("ocultar");
+}
+
+function mostrarElemento(elemento){
+  elemento.classList.remove("ocultar");
+}
+
 function eliminarMensajeError(){
   const $mensajeUsuario = document.querySelector("#mensaje-usuario");
   const $cartelError = document.querySelector("#mensaje-error");
   $cartelError.textContent = "";
-  $cartelError.classList.add("ocultar");
+  ocultarElemento($cartelError);
   $cartelError.classList.remove("error");
   $mensajeUsuario.value = "";
 }
 
 function ocultarMensajeResultado(){
   const $noSeEncontroImagen = document.querySelector("#no-se-encontro-imagen");
-  $noSeEncontroImagen.classList.remove("ocultar");
+  mostrarElemento($noSeEncontroImagen);
   const $noSeEncontroTexto = document.querySelector("#no-se-encontro-texto");
-  $noSeEncontroTexto.classList.remove("ocultar");
+  mostrarElemento($noSeEncontroTexto);
   const $resultadoMensaje =  document.querySelector("#resultado-mensaje");
   $resultadoMensaje.textContent = "";
-  $resultadoMensaje.classList.add("ocultar");
+  ocultarElemento($resultadoMensaje);
   const $btnCopiarMensaje =  document.querySelector("#btn-copiar-mensaje");
-  $btnCopiarMensaje.classList.add("ocultar");
+  ocultarElemento($btnCopiarMensaje);
   const $btnCopiarMensajeAlPortapapeles = document.querySelector("#btn-copiar-al-portapapeles");
-  $btnCopiarMensajeAlPortapapeles.classList.add("ocultar");
+  ocultarElemento($btnCopiarMensajeAlPortapapeles);
 }
 
 function mostrarMensaje(mensaje){
   const $noSeEncontroImagen = document.querySelector("#no-se-encontro-imagen");
-  $noSeEncontroImagen.classList.add("ocultar");
+  ocultarElemento($noSeEncontroImagen);
   const $noSeEncontroTexto = document.querySelector("#no-se-encontro-texto");
-  $noSeEncontroTexto.classList.add("ocultar");
+  ocultarElemento($noSeEncontroTexto);
   const $resultadoMensaje =  document.querySelector("#resultado-mensaje");
   $resultadoMensaje.textContent = mensaje;
-  $resultadoMensaje.classList.remove("ocultar");
+  mostrarElemento($resultadoMensaje);
   const $btnCopiarMensaje =  document.querySelector("#btn-copiar-mensaje");
-  $btnCopiarMensaje.classList.remove("ocultar");
+  mostrarElemento($btnCopiarMensaje);
   const $btnCopiarMensajeAlPortapapeles = document.querySelector("#btn-copiar-al-portapapeles");
-  $btnCopiarMensajeAlPortapapeles.classList.remove("ocultar");
+  mostrarElemento($btnCopiarMensajeAlPortapapeles);
 }
 
 function mostrarErrores(errores){
   const $cartelError = document.querySelector("#mensaje-error");
   errores.forEach(function(error){
-    $cartelError.classList.remove("ocultar");
+    mostrarElemento($cartelError);
     $cartelError.textContent = error;
     $cartelError.classList.add("error")
   });
