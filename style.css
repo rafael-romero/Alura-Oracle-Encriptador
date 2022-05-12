@@ -61,6 +61,7 @@ textarea{
   border-radius: 15px;
   text-align: center;
   padding: 10px;
+  font-size: larger;
 }
 
 ::placeholder{ color: yellow; text-align:center; font-size: larger; padding: 10px;}
