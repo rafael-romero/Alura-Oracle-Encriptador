@@ -18,14 +18,17 @@ h1{
   justify-content:space-evenly;
 }
 
-#captura-de-datos{
+.formato-secciones{
   width: 300px;
   height: 350px;
-  
   border-radius: 10px;
-  display: block;
-  text-align: center;
   background: transparent;
+  display: inline;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 textarea{
@@ -54,6 +57,11 @@ p{
   flex-direction: row;
   justify-content: space-around;
   margin-top: 10px;
+}
+
+#btn-encriptar{
+  position: relative;
+  margin-right: 45px;
 }
 
 .botones{
@@ -90,27 +98,23 @@ p{
   font-size: large;
 }
 
-/* #contenedor-resultado{
-  background: rgba(5, 7, 12, 0.40);
-  border-radius: 15px;
-} */
-
-#resultado{
-  width: 300px;
-  height: 350px;
-  border-radius: 10px;
-  background-color: transparent;
-  display: inline;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
+#borrar-todo{
+  width: 125px;
+  height: 60px;
+  align-self: center;
 }
 
 #no-se-encontro-texto{
+  margin-top: 15px;
   font-size: large;
+}
+
+#contenedor-botones-resultado{
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10px;
 }
 
 #btn-copiar-mensaje{

@@ -17,7 +17,7 @@
       <h1>Encriptador de Texto</h1>
       
       <div id="contenedor-principal">
-        <section id="captura-de-datos">
+        <section class="formato-secciones" id="captura-de-datos">
           <textarea id="mensaje-usuario" cols="30" rows="12" placeholder="Coloque el texto que desea encriptar AQUI!!!"></textarea>
           <p id="aclaracion-texto-input">&#8505 Solo minusculas y sin acentos o caracteres especiales!</p>
           <div id="contenedor-botones">
@@ -26,15 +26,17 @@
           </div>
           <strong id="mensaje-error" class="ocultar"></strong>
         </section>  
-        <div id="contenedor-resultado">
-          <section id="resultado">
-            <img src="img/buscando-algo.png" alt="hombre buscando algo en un libro" width="100" height="100" id="no-se-encontro-imagen">
-            <p id="no-se-encontro-texto">No se encontro ningun texto, ingrese el mensaje que desea encriptar o desencriptar!!!</p>
-            <textarea id="resultado-mensaje" class="ocultar" cols="30" rows="15"></textarea>
         <button class="botones" id="borrar-todo" onclick="borrarDatosDeAmbosCampos()">Borrar todo el texto!!!</button>
+        <section class="formato-secciones" id="resultado">
+          <img src="img/buscando-algo.png" alt="hombre buscando algo en un libro" width="100" height="100" id="no-se-encontro-imagen">
+          <p id="no-se-encontro-texto">No se encontro ningun texto, ingrese el mensaje que desea encriptar o desencriptar!!!</p>
+          <textarea id="resultado-mensaje" class="ocultar" cols="30" rows="15"></textarea>
+          <div id="contenedor-botones-resultado">
             <button type="button" class="ocultar botones" id="btn-copiar-mensaje">Copiar!!!</button>
-          </section>
-        </div>
+            <button type="button" class="ocultar botones" id="btn-copiar-al-portapapeles" onclick="copiarTextoAlPortapapeles()">Copiar Al Portapapeles</button>
+          </div>
+        </section>
+        
       </div>
      
 
