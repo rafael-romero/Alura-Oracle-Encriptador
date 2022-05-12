@@ -1,3 +1,10 @@
+function borrarDatosDeAmbosCampos(){
+  const $resultadoMensaje = document.querySelector("#resultado-mensaje");
+  $resultadoMensaje.textContent = "";
+  const $mensajeUsuario = document.querySelector("#mensaje-usuario");
+  $mensajeUsuario.value = "";
+  ocultarMensajeResultado();
+}
 
 function copiarTextoAlPortapapeles(){
   let textoCopiado = document.querySelector("#resultado-mensaje").innerHTML;
