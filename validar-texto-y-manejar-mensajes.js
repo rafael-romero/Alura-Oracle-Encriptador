@@ -13,7 +13,7 @@ function ocultarMensajeResultado(){
   const $noSeEncontroTexto = document.querySelector("#no-se-encontro-texto");
   $noSeEncontroTexto.classList.remove("ocultar");
   const $resultadoMensaje =  document.querySelector("#resultado-mensaje");
-  // $resultadoMensaje.textContent = "";
+  $resultadoMensaje.textContent = "";
   $resultadoMensaje.classList.add("ocultar");
   const $btnCopiarMensaje =  document.querySelector("#btn-copiar-mensaje");
   $btnCopiarMensaje.classList.add("ocultar");
