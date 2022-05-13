@@ -30,7 +30,7 @@ function copiarTextoAlPortapapeles(){
 }
 
 // El codigo debajo, hace lo mismo que lo que esta arriba, pero utiliza document.execCommand() el 
-// cual se desanconseja su uso...
+// cual se desanconseja su uso...esto no es codigo muerto, simplemente me sirve a modo informativo...
 // function copiarTextoAlPortapapeles(){
 //   let textoCopiado = document.querySelector("#resultado-mensaje");
 //   textoCopiado.select();
