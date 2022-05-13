@@ -53,7 +53,6 @@ body{
 }
 
 textarea{
-  background: transparent;
   color: yellow;
   border-style: none;
   resize: inherit;  
@@ -61,7 +60,8 @@ textarea{
   border-radius: 15px;
   text-align: center;
   padding: 10px;
-  font-size: larger;
+  font-size: large;
+  font-family: 'Helvetica', 'Verdana';
 }
 
 ::placeholder{ color: yellow; text-align:center; font-size: larger; padding: 10px;}
