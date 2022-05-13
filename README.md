@@ -1,7 +1,7 @@
-Challenge Encriptador de texto, del programa ONE by Oracle-Alura
+#Challenge Encriptador de texto, del programa ONE by Oracle-Alura
 ******************************************************
 
-La idea del proyecto era desarrollar una aplicacion que sea un encriptador de texto.
+##La idea del proyecto era desarrollar una aplicacion que sea un **encriptador de texto**.
 Las llaves de encriptacion que utilizamos son:  
 #La letra 'e' seria reemplazada por "enter"  
 #La letra 'i' seria reemplazada por "imes"  
@@ -9,7 +9,7 @@ Las llaves de encriptacion que utilizamos son:
 #La letra 'o' seria reemplazada por "ober"  
 #La letra 'u' seria reemplazada por "ufat"  
 
-Como requisitos para el desarrollo de la app, la misma:
+##Como requisitos para el desarrollo de la app, la misma:
 ------------------------------------------------------
 *Debe funcionar solo con letras minusculas.  
 *No deben ser utilizados letras con acentos ni caracteres especiales.  
@@ -18,12 +18,12 @@ Como requisitos para el desarrollo de la app, la misma:
 *El resultado de la operacion anterior debe mostrar se por pantalla.  
   
 
-Como extras!!!  
+###Como extras!!!  
 *Desarrollar un boton que copie el texto encriptado/desencriptado que sea similar al clasico "ctrl+C" que usamos cotidianamente.  
 *Realizar un pie de pagina con los datos de la persona que desarrollo el sitio web.  
 *Desencriptar el siguiente mensaje secreto que nos dejaron:
 "fenterlimescimesdaidenters poberr enternfrenterntair enterstenter dentersaifimesober y haibenterrlober cobernclufatimesdober cobern enterximestober!"  
 
 
-Author: Rafael Romero 
-https://github.com/rafael-romero
+***Author: Rafael Romero*** 
+[Link a mi repositorio de GitHub](https://github.com/rafael-romero)
